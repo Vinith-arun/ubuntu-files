@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>Responsive Navbar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+ <nav>
+
+    
+    <img src="navigation-bar-icon.png" id="img" onclick="toggle()" class="chechbtn">
+     <lable class="logo">NavBar</lable>
+     <ul id="ul">
+         <li class="active">Home</li>
+         <li onclick="goto(value)">About</li>
+         <li onclick="goto()">Service</li>
+         <li onclick="goto()">Contact</li>
+         <li onclick="goto()">Feedback</li>
+     </ul>
+ </nav>
+ <script>
+     document.getElementById("ul").style.left="100vw";
+     var state= false
+     function toggle(){
+        //  document.getElementById('ul').style.left="o";
+        state= state?false:true;
+        document.getElementById("ul").style.left=state?"0vw":"100vw"
+    }
+    function goto(value){
+
+    }
+ </script>
+</body>
+</html>

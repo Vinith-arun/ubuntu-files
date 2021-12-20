@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+        <title>Image slider</title>
+        <link href="style2.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+  
+                <p id="name">images/1.jpg</p>
+                <img class="img" name="image" src="images/1.jpg">
+
+                <div class="but">
+                    
+                    <button class="buttons" id="pre" onclick="myFunction1(),myFunction3()" > <<  </button>
+                    <button class="buttons"id="next" onclick="myFunction2(),myFunction3()">  >> </button>
+                </div class="but">
+                <script>
+                    var i=0;
+                    var images=[];
+                    images[0]="images/1.jpg";
+                    images[1]="images/2.jpg";
+                    images[2]="images/3.jpg";
+                    images[3]="images/4.jpeg";
+                    images[4]="images/image.jpg";
+                    function myFunction3(){
+                        if(i==0)
+                        {
+                            document.getElementById("pre").style.opacity=0.4;
+                            
+                        }
+                        else{
+                            document.getElementById("pre").style.opacity=1; 
+                        }
+                        if(i==images.length-1)
+                        {
+                            document.getElementById("next").style.opacity=0.4; 
+                        }
+                        else{
+                            document.getElementById("next").style.opacity=1; 
+                        }
+                    }
+                    
+                    function myFunction1() {
+                        if(i>0)
+                        {
+                            i=i-1;
+                            document.image.src=images[i];
+                            document.getElementById("name").innerHTML=images[i];
+                            
+                        }
+                        else 
+                        {
+                           i=0;
+                            
+                        }
+                    }
+                    function myFunction2() {
+                        if(i<images.length-1)
+                        {
+                            i=i+1;
+                            document.image.src=images[i];                            
+                            document.getElementById("name").innerHTML=images[i];
+                        }
+                        else 
+                        {
+                            i=images.length-1;
+                           
+                        }
+                    }
+                </script>
+
+    </body>
+</html>

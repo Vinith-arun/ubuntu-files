@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="view port" content="width=device-width, initial-scale=1.0">
+        <title>Document design</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+       
+        <header>
+            <div class="hero"> 
+                <p>Building Awesome Website</p>
+                <div>
+                    <h1>COMING </h1>
+                    <h2>SOON</h2>
+                </div>                              
+                <hr>
+                <p id="launch"></p>
+            </div>
+        </header>
+    </body>
+    <script>
+        var countDate= new Date("Jan 1, 2022 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now=new Date().getTime();
+            var distance=countDate-now;
+            var d=Math.floor(distance/(1000*60*60*24));
+            var h=Math.floor(distance%(1000*60*60*24)/(1000*60*60));
+            var m=Math.floor(distance%(1000*60*60)/(1000*60));
+            var s=Math.floor(distance%(1000*60)/1000);
+
+        document.getElementById("launch").innerHTML=d+"d "+h+"h "+m+"m "+s+"s";
+        if(distance<0)
+        {
+            clearInterval(x);
+            document.getElementById("launch").innerHTML="Expired";
+        }
+    },1000);
+    </script>
+</html>

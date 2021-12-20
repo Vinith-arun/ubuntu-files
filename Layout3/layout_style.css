@@ -1,0 +1,288 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(GemunuLibre-Light.ttf)format("truetype");
+  }
+  div{
+      font-family: myFirstFont;
+  }
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.top>div{
+    background-color: #fff;
+    margin: 10px;
+    height: 10vh;
+}
+#h1{
+    background-color: #aaa;
+    background-repeat: no-repeat;
+    background-blend-mode:overlay;
+    background-size: auto;
+    background-position-x: center;
+    transition:background-image-size 0.5s,width 0.5s, height 0.5s,color 0.5s,border-radius 0.5s,background-repeat 0.5s;
+}
+#wa{
+    width: 35px;
+    height: 35px;
+    background: url(sp.png) -6px -3px;
+        background-size: auto;
+    background-size: 800%;
+    border-radius: 13px;
+    margin: 6px 6px;
+  }
+.mid1>div{
+    background-image:  radial-gradient(#0dd,#0aa) ,url(images/back.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-blend-mode: hard-light;
+    color: #fff;
+    margin: 10px;
+    height: 20vh;
+    transition: background-image 1s,width 0.5s, height 0.5s,color 0.5s,border-radius 0.5s,background-repeat 0.5s;
+}
+.mid2>div{
+    background-color: #0ff;
+    color: #fff;
+    margin: 10px;
+    height: 10vh;
+}
+.f2>div{
+    background-color: #09c;
+    color: #fff;
+    margin: 10px;
+    height: 10vh;
+}
+.f1>div{
+    background-color: #09c;
+    color: #fff;
+    margin: 10px;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.a>div{
+    background-color: #aaa;
+    color: #f00 ;
+transition: background-image 0.5s,width 0.5s, height 0.5s,color 0.5s,border-radius 0.5s;
+}
+.b>div{
+    background-color: #aaa;
+    color: #f70 ;
+    border-color: #555 solid;
+transition: background-image 0.5s,width 0.5s, height 0.5s,color 0.5s,border-radius 0.5s;
+}
+.c>div{
+    background-color: #aaa;
+    color: #ff0 ;
+    border-color: #555 solid;
+
+transition: background-image 0.5s,width 0.5s, height 0.5s,color 0.5s,border-radius 0.5s;
+}
+
+
+@media (max-width: 360px){
+    .mid1>div:hover{
+        background-color: #088;
+        background-repeat: repeat;
+        background-position-x: center;
+        width:130%;
+        height: 23vh;
+        border-radius:5px;
+
+    }
+.a>div:hover{
+    background-image:radial-gradient(#f00,#c00) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+}
+.b>div:hover{
+    background-image:radial-gradient(#f70,#c60) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+}
+.c>div:hover{
+    background-image:radial-gradient(#ff0,#cc0) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+    box-shadow: none;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}   
+.f1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.f2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+}
+@media(min-width: 361px) and (max-width:768px){
+    .mid1>div:hover{
+        background-color: #088;
+        background-repeat: repeat;
+        background-position-x: center;
+        justify-content: center;
+        color: #fff;
+        width:130%;
+        height: 23vh;
+        border-radius:5px;
+    }
+    .a>div:hover{
+        background-image:radial-gradient(#f00,#c00) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+    
+}
+.b>div:hover{
+    background-image:radial-gradient(#f70,#c60) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+}
+.c>div:hover{
+    background-image:radial-gradient(#ff0,#cc0) ;
+    color: #fff;
+    width:130%;
+    height: 13vh;
+    border-radius:5px;
+    box-shadow: none;
+}
+.top{
+width: 100%;
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}   
+.f1{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+.f1>div{
+    width: 50%;
+}
+.f2{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+}
+.f2>div{
+    width: 50%;
+}
+}
+@media(min-width:768px){
+
+    .mid1>div:hover{
+
+        background-image: url(images/whatsapp.jpg);
+        background-repeat: no-repeat;
+        background-position-x: -25px;
+        color: #fff;
+        width:130%;
+        height: 23vh;
+        border-radius:5px;
+    }
+
+    #h2:hover{
+        background-image:radial-gradient(#f00,#c00) ;
+        color: #fff;
+        width:130%;
+        height: 15vh;
+        border-radius:5px;
+    }
+    #h1:hover{
+ 
+        background-image: url(images/insta.jpg);
+        background-size: 70% auto;
+        width:100%;
+        height: 20vh;
+        background-repeat: no-repeat;
+        
+        border: #999 solid;
+        border-radius: 5px;
+        background-position-x: center;
+
+    }
+
+    .b>div:hover{
+        background-image:radial-gradient(#f70,#c60) ;
+        color: #fff;
+        width:130%;
+        height: 13vh;
+        border-radius:5px;
+    }
+    .c>div:hover{
+        background-image:radial-gradient(#ff0,#cc0) ;
+        color: #fff;
+        box-shadow: none ;
+        width:130%;
+        height: 13vh;
+        border-radius:5px;
+    }
+.top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+.top>div{
+    width: 100%;
+    margin: 10px;
+}
+.mid2{
+display: flex;
+flex-direction: row;
+}
+.mid2>div{
+    width: 100%;
+}
+.foot{
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+ }   
+.f1{
+    display: flex;
+    flex-direction: row; 
+    width: 50%;
+}
+.f1>div{
+    width: 50%;
+}
+.f2{
+    display: flex;
+    flex-direction: row; 
+    width: 50%;
+}
+.f2>div{
+    width: 50%;
+}
+
+}
